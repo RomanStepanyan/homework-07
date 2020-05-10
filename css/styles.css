@@ -167,63 +167,88 @@ header {
 
 .contacts__title {
     padding-top: 110px;
-    color: #fed136;
+    color: rgb(255, 255, 255);
 }
 
 .input__field {
-    display: block;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);
     border-radius: 2px;
     background-color: rgb(255, 255, 255);
-    width: 459px;
+    width: 456px;
     font-size: 14px;
-    margin: 0px 28px 28px 0px;
-    padding: 20px;  
+    line-height: 15px;
+    margin-bottom:28px;
+    padding: 18px;  
 }
-  
+.form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+    
 
-  .message__field {
-    display: inline-block;
+.message__field {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    width: 459px;
-    height: 214px;
+    width: 456px;
+    height: 215px;
     font-size: 14px;
-  
-  }
+    margin-bottom: 28px;
+    padding: 18px;
+    resize: none;
+}
 
-  input::placeholder {
+input::placeholder, textarea::placeholder {
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(187, 187, 187);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-    text-align: left;
-  }
+}
+
   
-  .section__contacts {
+.section__contacts {
     background-color: rgb(34, 34, 34);
-    /* position: absolute;
-   
-    width: 1402px;
-    height: 677px; */
-   
-  }
+    background-image: url("../img/map-image.png");
+    background-repeat: no-repeat;
+    background-position: bottom 20px right;
+}
   
+.send__message {
+    display: block;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 18px;
+    text-align: center;
+    padding: 23px 23px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.button__wrapper {
+    padding-bottom: 115px;
+}
+.input__field:required:focus {
+    outline: none;
+}     
+.input__field:required:focus:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+.input__field:required:focus:invalid:not(:placeholder-shown) {
+    border-color:red;
+}
  
-  
-
-
-
-
-
-
-
-
 

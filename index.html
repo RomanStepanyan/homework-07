@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>
-        <Homework-07></Homework-07>
+        Homework-07
     </title>
 </head>
 
 <body>
     <header class="container">
         <div class="logo__wrapper">
-            <a href="" class="logo__link">Golden</a>
+            <a href="#" class="logo__link">Golden</a>
         </div>
         <nav>
             <ul class="navigation__list">
                 <li class="navigation__list-item">
-                    <a href="" class="navigation__list-item-link">home</a>
+                    <a href="#" class="navigation__list-item-link">home</a>
                 </li>
                 <li class="navigation__list-item">
-                    <a href="" class="navigation__list-item-link">services</a>
+                    <a href="#" class="navigation__list-item-link">services</a>
                 </li>
                 <li class="navigation__list-item">
-                    <a href="" class="navigation__list-item-link">portfolio</a>
+                    <a href="#" class="navigation__list-item-link">portfolio</a>
                 </li>
                 <li class="navigation__list-item">
-                    <a href="" class="navigation__list-item-link">about</a>
+                    <a href="#" class="navigation__list-item-link">about</a>
                 </li>
                 <li class="navigation__list-item">
-                    <a href="" class="navigation__list-item-link">contact</a>
+                    <a href="#" class="navigation__list-item-link">contact</a>
                 </li>
             </ul>
         </nav>
@@ -70,24 +70,28 @@
             <div class="section__contacts-wrapper container">
                 <h2 class="section__title contacts__title">services</h2>
                 <h3 class="section__subtitle">Proin iaculis purus consequat sem cure.</h3>
-                <div class="form__wrapper">
-                    <form action="#" class="contacts__form">
+                <form action="#" class="contacts__form">
+                    <div class="form__wrapper">
                         <div class="inputs__wrapper">
-                            <input type="name" class="input__field input__name" placeholder="your name *">
-                            <input type="email" class="input__field input__email" placeholder="your e-mail *">
-                            <input type="text" class="input__field input__subject" placeholder="subject">
+                            <input name="user_name" type="text" class="input__field input__name"
+                                placeholder="your name *" required minlength="2">
+                            <input name="user_email" type="email" class="input__field input__email"
+                                placeholder="your e-mail *" required>
+                            <input name="user_subject" type="text" class="input__field input__subject"
+                                placeholder="subject">
                         </div>
-                        <input type="text" class="message__field" placeholder="Your Message *">
-                    </form>
-                </div>
+                        <div class="message__field-wrapper">
+                            <textarea name="user_message" class="message__field input__field" id="" cols="30" rows="10"
+                                minlength="10" maxlength="500" placeholder="your message *" required></textarea>
+                        </div>
+                    </div>
+                    <div class="button__wrapper container">
+                        <button class="send__message">Send Message</button>
+                    </div>
+                </form>
             </div>
-            
-            
-
         </section>
-
     </main>
-
 </body>
 
 </html>
