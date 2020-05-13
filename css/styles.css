@@ -134,7 +134,6 @@ header {
     margin-bottom: 20px;
 }
 .services__list-item-name::before {
-    content: "";
     display: block;
     width: 72px;
     height: 71px;    
@@ -171,6 +170,7 @@ header {
 }
 
 .input__field {
+    font-family: "Montserrat";
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);
@@ -187,31 +187,17 @@ header {
     justify-content: space-between;
     
 }
-    
-
 .message__field {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(204, 204, 204);
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    width: 456px;
     height: 215px;
-    font-size: 14px;
-    margin-bottom: 28px;
-    padding: 18px;
     resize: none;
 }
 
 input::placeholder, textarea::placeholder {
-    font-size: 14px;
-    font-family: "Montserrat";
     color: rgb(187, 187, 187);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
 }
-
   
 .section__contacts {
     background-color: rgb(34, 34, 34);
